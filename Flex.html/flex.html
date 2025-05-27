@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            padding-bottom: 50px; /* Matches footer height to prevent content overlap */
+        }
+
+        .nav {
+            display: flex;
+            background-color: rgb(53, 48, 48);
+            justify-content: space-between;
+            padding: 0 20px;
+            align-items: center;
+            height: 50px;
+            color: aliceblue;
+        }
+
+        .element {
+            display: flex;
+            width: 800px;
+            justify-content: space-between;
+        }
+
+        .element a {
+            color: aliceblue;
+        }
+
+        .element button {
+            background: rgb(194, 197, 21);
+            padding: 2px 10px;
+            margin: 0;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+        }
+
+        .container img {
+            flex: 1;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .container img:hover {
+            transform: rotate(10deg);
+        }
+
+        .card h5 {
+            color: green;
+        }
+
+        .card {
+            border: 2px solid cadetblue;
+            border-color: azure;
+            box-shadow: inset;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div>
+            <h1>Shop With Me</h1>
+        </div>
+        <div class="element">
+            <div>
+                <a href="">Account</a>
+            </div>
+            <div>
+                <input type="search" placeholder="Search.." name="" id="">
+                <button>Search</button>
+            </div>
+            <div>
+                <i style="color: aliceblue;" class="fa-solid fa-cart-shopping"><sub>0</sub></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- cart -->
+    <div class="container">
+        <div class="card">
+            <div>
+                <img src="https://i5.walmartimages.com/seo/Fresh-Red-Delicious-Apple-Each_7320e63a-de46-4a16-9b8c-526e15219a12_3.e557c1ad9973e1f76f512b34950243a3.jpeg" alt="">
+            </div>
+            <div>
+                <h4>Apple</h4>
+                <h5>15 tk</h5>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <img src="https://i5.walmartimages.com/seo/Fresh-Red-Delicious-Apple-Each_7320e63a-de46-4a16-9b8c-526e15219a12_3.e557c1ad9973e1f76f512b34950243a3.jpeg" alt="">
+            </div>
+            <div>
+                <h4>Banana</h4>
+                <h5>15 tk</h5>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <img src="https://i5.walmartimages.com/seo/Fresh-Red-Delicious-Apple-Each_7320e63a-de46-4a16-9b8c-526e15219a12_3.e557c1ad9973e1f76f512b34950243a3.jpeg" alt="">
+            </div>
+            <div>
+                <h4>Orange</h4>
+                <h5>15 tk</h5>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <imgsrc="https://i5.walmartimages.com/seo/Fresh-Red-Delicious-Apple-Each_7320e63a-de46-4a16-9b8c-526e15219a12_3.e557c1ad9973e1f76f512b34950243a3.jpeg" alt="">
+            </div>
+            <div>
+                <h4>Water Mellon</h4>
+                <h5>15 tk</h5>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Thank you for watching</p>
+    </footer>
+</body>
+</html>
